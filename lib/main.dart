@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:screen_utils_example/resources/theme.dart';
-import 'package:screen_utils_example/screens/home_screen.dart';
+import 'package:screen_utils_example/utils/router_manager.dart';
 
 void main() {
   runApp(_MyApp());
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: getThemeData(),
-      home: HomeScreen(title: 'Flutter Demo Home Page'),
+      initialRoute: splashRoute,
     );
   }
 }
