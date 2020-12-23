@@ -17,6 +17,14 @@ class RouterManager {
       case homeRoute:
         builder = (BuildContext _) => const HomeScreen();
         break;
+
+      default:
+        builder = (BuildContext _) => Scaffold(
+              body: Center(
+                child: Text('No route defined for ${settings.name}'),
+              ),
+            );
+        break;
     }
     return MaterialPageRoute<dynamic>(builder: builder, settings: settings);
   }
