@@ -37,7 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             Divider(color: Colors.black),
             Text(
-              'ThemeFontSize: ${ThemeFontSize.x4Large}',
+              'ThemeFontSize: ${ThemeFontSize().x4Large}',
               style: TextStyle(
                 color: Colors.black87,
                 fontWeight: FontWeight.normal,
@@ -55,8 +55,16 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             Divider(color: Colors.black),
             Text(
-              'INVISIBLE',
+              'INVISIBLE (ThemeFontSize)',
               style: Theme.of(context).textTheme.headline2.copyWith(
+                    color: Colors.black87,
+                    fontWeight: FontWeight.normal,
+                  ),
+            ),
+            Divider(color: Colors.black),
+            Text(
+              'INVISIBLE (ThemeFontSizeWithoutConstructor)',
+              style: Theme.of(context).textTheme.headline4.copyWith(
                     color: Colors.black87,
                     fontWeight: FontWeight.normal,
                   ),
