@@ -27,49 +27,6 @@ class ThemeFontSize {
   static num button = medium;
 }
 
-class ThemeDimensions {
-  static num buttonHeight = 135.h;
-  static num inputBorderRadius = 20.w;
-
-  static num getBasicTopPadding() => 45.h;
-  static num getBasicBottomPadding() => 25.h;
-  static num getBasicLeftPadding() => 50.w;
-  static num getBasicRightPadding() => 50.w;
-
-  static EdgeInsets getBasicBodyPadding({
-    double top,
-    double bottom,
-    double left,
-    double right,
-  }) {
-    return EdgeInsets.only(
-      top: top ?? getBasicTopPadding(),
-      bottom: bottom ?? getBasicBottomPadding(),
-      left: left ?? getBasicLeftPadding(),
-      right: right ?? getBasicRightPadding(),
-    );
-  }
-
-  static num getFullTopPadding() => 70.h;
-  static num getFullBottomPadding() => 40.h;
-  static num getFullLeftPadding() => 80.w;
-  static num getFullRightPadding() => 80.w;
-
-  static EdgeInsets getFullBodyPadding({
-    double top,
-    double bottom,
-    double left,
-    double right,
-  }) {
-    return EdgeInsets.only(
-      top: top ?? getFullTopPadding(),
-      bottom: bottom ?? getFullBottomPadding(),
-      left: left ?? getFullLeftPadding(),
-      right: right ?? getFullRightPadding(),
-    );
-  }
-}
-
 ThemeData getThemeData() => ThemeData(
       textTheme: TextTheme(
         button: TextStyle(
